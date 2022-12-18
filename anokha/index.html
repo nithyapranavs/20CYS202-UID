@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>Anokha tech fest</title>
+	<style>
+		.bar {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgb(51, 51, 51);
+		}
+
+		.nav-item {
+			float: left;
+		}
+
+		.nav-item a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+/* Change the link color to #111 (black) on hover */
+		li a:hover {
+		background-color: rgb(3, 26, 86);
+		}
+	</style>
+    <nav>
+    	<ul class="bar">
+        <li class="nav-item"><a href="index.html"> home </a></li>
+        <li class="nav-item"><a href="about.html">About event </a></li>
+        <li class="nav-item"><a href="login.html">login</a></li>
+		<li class="nav-item"><a href="signup.html">Register</a></li>
+    	</ul>
+    </nav>
+</head>
+
+<body>
+<img align= iddle src="image/thumbnail.jpg" alt="front view" style="width:100%;height:75%;margin-top: 10px; "> 
+<center>
+<h1 text-align="center">Competations </h1>
+</center>
+
+<style>
+	.collapsible {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+
+
+	.active, .collapsible:hover {
+		background-color: #ccc;
+	}
+
+
+	.content {
+		padding: 0 18px;
+		display: none;
+		overflow: hidden;
+		background-color: #f1f1f1;
+	}
+</style>
+
+<button type="button" class="collapsible">Information Technology Capture the Flag (IT-CTF):</button>
+<div class="content">
+
+	<ul>
+		<li>In this type of CTF a different platform will be provided where participants/teams have to register or login with predefined credentials separately and all the information will be sent to their registered email address.</li>
+		<li>Participants/teams will be provided puzzles, programs with security vulnerabilities. There is a Secret key called ‘flag’ embedded with each of the puzzles. Finding the same is proof that participants have solved the particular challenge and by submitting the flag earns the points.</li>
+		<li>Flags are chosen to look very distinctive and a special type of formatting that participants can easily recognize that it is the flag.</li>
+		<li>Task will be categorised as Cryptographic challenge, Steganographic challenge, Web based, Reverse engineering, Networking, Forensics and others.</li>
+		<li>Each problem statement has its own points which depends on the hardness of the problem.</li>
+		<li>The marking procedure depends on how many points participants would have earned and how much time they have taken to submit the flags.</li>
+	</ul>
+
+</div>
+
+<button type="button" class="collapsible">Operational Technology Capture the Flag (OT-CTF):</button>
+<div class="content">
+	<ul>
+		<li>The registered participants will be given remote VPN access to the OT-CTF platform. They have to log in to the system first as per the credential and specific time slot provided to them by the organisers.</li>
+		<li> system will be a non hardened Industrial Control System (ICS) with the pre configured vulnerabilities.</li>
+		<li>The task can be divided as– Participants have to discover the IP range of the OT Network, discover the devices connected to the network and its running protocols. Find the device or devices with vulnerabilities and exploit the system to gain access to the system.</li>
+		<li>The infrastructure can be as complex as a real Industrial Control System used to have.</li>
+		<li>A Proof of Concept report with proper screenshots needs to be sent with all the information like discovered IP range, connected devices, running protocols, and attack methodology to the organiser to the ctf@cyberpeace.net email id. Also mention the tools and if any script is used in the attack methodology.</li>
+		<li>The marking procedure depends on discovered IP range, number of devices and protocols, number of compromised devices and also on the time taken to send the Proof of Concept report and its strength.</li>
+		<li><span style="color: #ff0000;">CAUTION:</span>
+			The participants need to secure their attacking system first before entering the OT Network. As their System is suspected to be attacked by the other attackers. The organiser will not be responsible for any kind of damage.</li>
+	</ul>
+</div>
+<button type="button" class="collapsible">Cyber Policy & Strategy Challenge</button>
+<div class="content">
+	<p>Welcome back to the fourth edition of the Global CyberPeace Challenge! Gear up and get ready to take part in one of the largest simulations of the International cyber crisis. It will be your strategies and policies 
+		coupled with necessary trade-offs against the clock and wit of the other teams.</p>
+	<br>
+	<p>A simulated scenario will test the teams and players on their knowledge in foreign policy and cybersecurity and will then decide their worth as the next potential Leader of Cyber Security &Policy and the Winner of the competition.</p>
+</div>
+</body>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+<br>
+<br>
+</html>

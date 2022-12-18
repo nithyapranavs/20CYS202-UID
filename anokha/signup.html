@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<script src="script.js"></script>
+
+		<style>
+			.bar {
+				display: flex;
+				list-style-type: none;
+				justify-content: center;
+				flex-wrap: wrap;
+	
+			}
+		
+	
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: rgb(51, 51, 51);
+			}
+	
+			li {
+				float: left;
+			}
+	
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+	
+	/* Change the link color to #111 (black) on hover */
+			li a:hover {
+			background-color: rgb(3, 26, 86);
+			}
+		</style>
+		<nav>
+			<ul class="bar">
+			<li class="nav-item"><a href="index.html"> home </a></li>
+			<li class="nav-item"><a href="about.html">About event </a></li>
+			<li class="nav-item"><a href="login.html">login</a></li>
+			<li class="nav-item"><a href="signup.html">Register</a></li>
+			</ul>
+		</nav> 
+
+		<style>
+			div {
+				box-sizing: border-box;
+				width: 100%;
+				border: 100px solid black;
+				float: left;
+				align-content: center;
+				align-items: center;
+			}
+
+			form {
+				margin: 0 auto;
+				width: 600px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2 style="text-align: center;">REGISTRATION FORM</h2>
+		<form name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post">
+			
+			<p>Name:<br> <input type="text" size="65" name="Name" /></p>
+			<br />
+			<p>Address: <br><textarea cols="65" name="Address"></textarea></p>
+			<br />
+			<p>E-mail Address: <input type="text" size="65" name="EMail" /></p>
+			<br />
+			<label>   
+				<b>Gender :  </b>
+				</label><br>  
+				<input type="radio" name="male"/> Male <br>  
+				<input type="radio" name="female"/> Female <br>  
+				<input type="radio" name="other"/> Other  <br>  
+				<br> 
+			</label>
+			<h4>Date Of Birth:
+				<input type="datetime-local" id="Test_DatetimeLocal">
+			</h4>
+			<p>Password: <input type="text" size="65" name="Password" /></p>
+			<br />
+			<p>Telephone: <input type="text" size="65" name="Telephone" /></p>
+			<br />
+			<p>
+				Choose A Event
+				<select type="text" value="" name="Event">
+					<option>Select</option>
+					<option>IT-CTF</option>
+					<option>OT-CTF</option>
+					<option>Cyber Policy & Strategy Challenge</option>
+				
+				</select>
+			</p>
+
+			<br />
+			<br />
+						
+			<b>Upoload your dp: </b><br>
+			<input type="file" id="file1" name="upload">
+			<br>
+			<br>
+
+			<a href="login.html">login</a>
+			<br>
+			<br>
+						
+			<p>
+				<input type="submit" value="send" name="Submit" />
+				<input type="reset" value="Reset" name="Reset" />
+			</p>
+
+		</form>
+	</body>
+</html>
