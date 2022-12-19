@@ -1,4 +1,4 @@
-function GEEKFORGEEKS() {
+function valid() {
     var name =
         document.forms.RegForm.Name.value;
     var email =
